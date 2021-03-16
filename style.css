@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    
+    background-image: url(img/bg-pattern-top.svg), url(img/bg-pattern-bottom.svg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 30vh, left 47vw top 50vh;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+.main__container {
+    width: 325px;
+    height: 350px;
+    background-color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    color:hsl(229, 23%, 23%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s ease-out;
+}
+.main__container:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 8px 8px rgba(38, 38, 38, 0.2);
+
+}
+.top {
+    height: 35%;
+    width: 100%;
+    background-image: url(img/bg-pattern-card.svg);
+    border-radius: 20px 20px 0 0;
+}
+.middle {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.middle img {
+    margin-top: -50px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 5px solid white;
+    cursor: pointer;
+}
+.user__info {
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.user__info span {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+.user__location {
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 59%);
+    padding-bottom: 15px;
+}
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    width: 100%;
+    border-top: solid hsla(0, 1%, 86%, 0.603);
+    border-width: thin;
+}
+.stats {
+    padding: 5px 25px;
+    text-align: center;
+    font-weight: 700;
+    
+}
+.stats span {
+    font-size: 0.6rem;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
