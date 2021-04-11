@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/jpg" href="imgs/favicon-32x32.png"/>
+    
+    <!--Import Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!--Import Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"> 
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Intro component with sign-up form</title>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <h1>Learn to code by watching others</h1>
+
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+        <div class="right">
+            <h2>Try it free 7 days <span>then $20/mo. thereafter</span></h2>
+
+            <form id="signup" name="signup">
+                <div class="wrapper">
+                    <input type="text" name="first" id="first" class="input" placeholder="First Name">
+                    <i id="first-icon" class="fas fa-exclamation-circle"></i>
+                    <span id="first-error" class="error"></span>
+                </div>
+                
+                <div class="wrapper">
+                    <input type="text" name="last" id="last" class="input" placeholder="Last Name">
+                    <i id="last-icon" class="fas fa-exclamation-circle"></i>
+                    <span id="last-error" class="error"></span>
+                </div>
+
+                <div class="wrapper">
+                    <input type="email" name="email" id="email" class="input" placeholder="Email Address">
+                    <i id="email-icon" class="fas fa-exclamation-circle"></i>
+                    <span id="email-error" class="error"></span>
+                </div>
+
+                <div class="wrapper">
+                    <input type="password" name="password" id="password" class="input" placeholder="Password">
+                    <i id="password-icon" class="fas fa-exclamation-circle"></i>
+                    <span id="password-error" class="error"></span>
+                </div>
+                
+                <button type="submit" id="btn">Claim your free trial</button>
+
+                <span class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></span>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Challenge by 
+            <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1" target="_blank">Frontend Mentor</a>
+        </p>
+
+        <p><i class="fas fa-terminal"></i>
+            Coded by <a href="https://github.com/rlanier-webdev/frontend-mentor-challenges" target="_blank">@rlanier-webdev</a>
+        </p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
