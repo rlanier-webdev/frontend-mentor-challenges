@@ -187,3 +187,12 @@ footer i {
     }
    
 }
+@media only screen and (max-width: 510px) {
+    footer {
+        flex-direction: column;
+    }
+    footer p {
+        line-height: 1.8rem;
+
+    }
+}
