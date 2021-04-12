@@ -1,0 +1,190 @@
+:root {
+    --dark-grayish-blue: hsl(217, 19%, 35%);
+    --dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+main {
+    background: white;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 20px;
+    width: 680px;
+    border-radius: 10px;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+    padding-right: 15px;
+}
+.left {
+    height: 100%;
+    background-image: url('images/drawers.jpg');
+    background-size: 123% 100%;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.right {
+    padding: 20px ;
+}
+.article h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark-grayish-blue);
+}
+.article p {
+    padding: 15px 0;
+}
+.author {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.author img {
+    border-radius: 50%;
+    width: 40px;
+}
+.name {
+    padding-left: 20px;
+    color: var(--grayish-blue);
+}
+.name p {
+    color: var(--dark-grayish-blue);
+    font-weight: 700;
+}
+.share {
+    margin-left: auto;
+    cursor: pointer;
+}
+.share a {
+    color:var(--grayish-blue);
+}
+.fa-share {
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--light-grayish-blue);
+}
+.fa-share:hover {
+    background-color: var(--dark-blue);
+    color: var(--light-grayish-blue);
+}
+.share-options {
+    background-color: var(--dark-grayish-blue);
+    position: absolute;
+    top: 410px;
+    right: 258px;
+    width: 240px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    color: var(--light-grayish-blue);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    visibility: hidden;
+}
+.share-options::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: var(--dark-grayish-blue);
+    top: 40px;
+}
+.share-options > * {
+    padding: 10px;
+}
+.share-options p {
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .2rem;
+    color: var(--grayish-blue);
+}
+.share-options i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.share-options i:hover {
+    color: var(--grayish-blue);
+}
+.show {
+    visibility: visible;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    font-size: 0.8rem;
+}
+footer a {
+    color: var(--light-grayish-blue);
+    text-decoration: none;
+    background-color: var(--dark-grayish-blue);
+    padding: 5px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+footer i {
+    margin-left: 15px;
+}
+@media only screen and (max-width: 735px) {
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        max-width: 85%;
+        padding-right: 0;
+        background-size: 100%;
+    }
+    .left {
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+
+}
+@media only screen and (max-width: 490px) {
+    footer {
+        flex-direction: column;
+    }
+    footer p {
+        line-height: 1.8rem;
+
+    }
+}
