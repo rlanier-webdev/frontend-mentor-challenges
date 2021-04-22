@@ -1,0 +1,176 @@
+:root {
+    --primary-bright-orange: hsl(31, 77%, 52%);
+    --primary-dark-cyan: hsl(184, 100%, 22%);
+    --primary-very-dark-cyan: hsl(179, 100%, 13%);
+    --neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --neutral-very-light-gray: hsl(0, 0%, 95%);
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--neutral-very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--neutral-transparent-white);
+    font-weight: 400;
+    line-height: 1.8;
+
+}
+main {
+    margin: 0 auto;
+    display: flex;
+    width: 900px;
+    height: 480px;
+    margin-top: 25vh;
+}
+main > div {
+    width: 33%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.col-1 {
+    background-color: var(--primary-bright-orange);
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+}
+div.col-2 {
+    background-color: var(--primary-dark-cyan);
+}
+div.col-3 {
+    background-color: var(--primary-very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+}
+div h1 {
+    color: var(--neutral-very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-top: -50px;
+}
+div p {
+    margin-top: -70px; 
+}
+button {
+    width: 145px;
+    padding: 15px;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--neutral-very-light-gray);
+    border: 1px solid var(--neutral-very-light-gray);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+}
+div.col-1 button {
+    color: var(--primary-bright-orange);
+}
+div.col-2 button {
+    color: var(--primary-dark-cyan);
+}
+div.col-3 button {
+    color: var(--primary-very-dark-cyan);
+}
+
+div.col-1 button:hover {
+    background-color: var(--primary-bright-orange);
+    color: var(--neutral-very-light-gray);
+    border: 1px solid var(--neutral-very-light-gray);
+}
+div.col-2 button:hover {
+    background-color: var(--primary-dark-cyan);
+    color: var(--neutral-very-light-gray);
+    border: 1px solid var(--neutral-very-light-gray);
+}
+div.col-3 button:hover {
+    background-color: var(--primary-very-dark-cyan);
+    color: var(--neutral-very-light-gray);
+    border: 1px solid var(--neutral-very-light-gray);
+}
+footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: var(--primary-very-dark-cyan);
+    font-size: 0.8rem;
+}
+footer a {
+    color: inherit;
+    line-height: 2.8;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+footer i {
+    margin-left: 15px;
+}
+/* Media Queries - Mobile Devices */
+@media only screen and (max-width: 896px) {
+
+    body {
+        min-width: 375px;
+    }
+    main {
+        flex-direction: column;
+        max-width: 75%;
+        height: 100%;
+    }
+    main > div {
+        width: 100%;
+    }
+    div h1 {
+        margin: 25px 0 25px 0;
+    
+    }
+    div p {
+        margin: 0 0 50px 0;
+    }
+    div.col-1 {
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        -ms-border-radius: 10px 10px 0 0;
+        -o-border-radius: 10px 10px 0 0;
+}
+
+    div.col-3 {
+        border-radius: 0 0 10px 10px;
+        -webkit-border-radius: 0 0 10px 10px;
+        -moz-border-radius: 0 0 10px 10px;
+        -ms-border-radius: 0 0 10px 10px;
+        -o-border-radius: 0 0 10px 10px;
+}
+}
+
+@media only screen and (max-width: 490px) {
+    footer {
+        flex-direction: column;
+    }
+    footer p {
+        line-height: 1.8rem;
+
+    }
+}
